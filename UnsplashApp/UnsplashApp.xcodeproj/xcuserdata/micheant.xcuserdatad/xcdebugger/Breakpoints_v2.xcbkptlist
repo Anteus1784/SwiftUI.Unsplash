@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C846B930-CED1-40ED-990B-06DFC6AFEAE1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnsplashApp/FeedState.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchHomeFeed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B - 4d6dffdf7ce17366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for UnsplashApp.FeedState.fetchHomeFeed() async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/FeedState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B - 4d6dffdf7ce173a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for UnsplashApp.FeedState.fetchHomeFeed() async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/FeedState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
