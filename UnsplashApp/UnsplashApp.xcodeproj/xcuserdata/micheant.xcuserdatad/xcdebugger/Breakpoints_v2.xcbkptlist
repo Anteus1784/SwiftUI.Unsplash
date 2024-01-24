@@ -7,47 +7,141 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B"
+            uuid = "360C147A-C010-4A8E-98B5-3F51B23FDE66"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UnsplashApp/FeedState.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "fetchHomeFeed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB44B8CE-78B8-44F6-8B8C-F5D3D8250F7C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnsplashApp/Network/UnsplashAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "topicListUrl()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B - 4d6dffdf7ce17366"
+                  uuid = "DB44B8CE-78B8-44F6-8B8C-F5D3D8250F7C - f01bc497a3e1fc71"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UnsplashApp.FeedState.fetchHomeFeed() async -&gt; ()"
+                  symbolName = "UnsplashApp.UnsplashAPI.topicListUrl() -&gt; Swift.Optional&lt;Foundation.URL&gt;"
                   moduleName = "UnsplashApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/FeedState.swift"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/UnsplashAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "120">
                </Location>
                <Location
-                  uuid = "10A309A4-87F3-4A6E-AA2B-F95448DF059B - 4d6dffdf7ce173a4"
+                  uuid = "DB44B8CE-78B8-44F6-8B8C-F5D3D8250F7C - f01bc497a3e1fc71"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UnsplashApp.FeedState.fetchHomeFeed() async -&gt; ()"
+                  symbolName = "UnsplashApp.UnsplashAPI.topicListUrl() -&gt; Swift.Optional&lt;Foundation.URL&gt;"
                   moduleName = "UnsplashApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/FeedState.swift"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/UnsplashAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "95">
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "117">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5186203E-4D19-49D7-B8BD-27A813BFE826"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnsplashApp/Network/TopicState.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchTopicPhoto(name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5186203E-4D19-49D7-B8BD-27A813BFE826 - b7777aa0a3ce4a86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for UnsplashApp.TopicState.fetchTopicPhoto(name: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/TopicState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "893">
+               </Location>
+               <Location
+                  uuid = "5186203E-4D19-49D7-B8BD-27A813BFE826 - 55ef6c9628bac2b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for UnsplashApp.TopicState.fetchTopicPhoto(name: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/TopicState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "5186203E-4D19-49D7-B8BD-27A813BFE826 - b4599144d8270e80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for UnsplashApp.TopicState.fetchTopicPhoto(name: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/TopicState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "5186203E-4D19-49D7-B8BD-27A813BFE826 - 34b37bd6eb33ac81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for UnsplashApp.TopicState.fetchTopicPhoto(name: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "UnsplashApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheant/Documents/swift-swiftui-gs2/UnsplashApp/UnsplashApp/Network/TopicState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "78">
                </Location>
             </Locations>
          </BreakpointContent>
