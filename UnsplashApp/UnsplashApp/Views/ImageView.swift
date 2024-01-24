@@ -19,8 +19,6 @@ struct ImageView: View {
     
     var photo : UnsplashPhoto
     
-    private var imageDownload : ImageRenderer
-    
     var body: some View {
         VStack {
             VStack {

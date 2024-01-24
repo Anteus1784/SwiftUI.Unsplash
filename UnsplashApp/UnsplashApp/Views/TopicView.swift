@@ -24,7 +24,7 @@ struct TopicView: View {
                         await topicState.fetchTopicPhoto(name: topic.slug)
                     }
                 }, label: {
-                    Text("Load Data")
+                    Text("Load Image for this Topic")
                 })
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible(minimum: 150)),

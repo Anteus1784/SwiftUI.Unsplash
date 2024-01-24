@@ -22,7 +22,7 @@ struct ContentView: View {
                         await topicState.fetchListTopic()
                     }
                 }, label: {
-                    Text("Load Data")
+                    Text("Load Image")
                 })
                 ScrollView(.horizontal){
                     LazyHGrid(rows: [GridItem(.flexible(minimum: 90, maximum: 100))], spacing: 8){
