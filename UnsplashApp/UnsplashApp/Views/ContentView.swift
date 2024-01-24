@@ -11,6 +11,8 @@ struct ContentView: View {
     @StateObject var feedState = FeedState()
     @StateObject var topicState = TopicState()
     
+    @State var selectedPhoto: UnsplashPhoto?
+    
     var body: some View {
         VStack {
             NavigationStack {
@@ -51,11 +53,12 @@ struct ContentView: View {
                                         .foregroundColor(.gray)
                                         .frame(width:90, height: 50)
                                     
-                                    Text("Something")
+                                    Text("          ").frame(width: 90)
                                 }
                             }
                         }
-                    }.redacted(reason: feedState.homeFeed == nil ? .placeholder : []).padding().frame(height: 100)
+                    }
+                    .redacted(reason: feedState.homeFeed == nil ? .placeholder : []).padding().frame(height: 100)
                     
                 }
                 ScrollView {
@@ -64,10 +67,16 @@ struct ContentView: View {
                         if let homeFeedUnwrapped = feedState.homeFeed
                         {
                             ForEach(homeFeedUnwrapped){ item in
-                                AsyncImage(url: URL(string: String(item.urls.regular))) {image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
-                                } placeholder: {
-                                    ProgressView().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                Button {
+                                    selectedPhoto = item
+                                } label: {
+                                    AsyncImage(url: URL(string: String(item.urls.regular))) {image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                    } placeholder: {
+                                        ProgressView().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                    }
                                 }
+                            }.sheet(item: $selectedPhoto) { item in
+                                ImageView(photo: item)
                             }
                         } else {
                             ForEach (1...12, id: \.self){ i in

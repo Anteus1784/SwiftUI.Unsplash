@@ -12,10 +12,9 @@ class FeedState :ObservableObject{
 
     func fetchHomeFeed() async {
         guard  let urlUnwrapped = (UnsplashAPI().feedUrl(orderBy: "popular", perPage: 20)) else {
-            print ("l'url est vide")
+            print ("L'url est vide")
             return
         }
-            
         
         print(urlUnwrapped)
         
