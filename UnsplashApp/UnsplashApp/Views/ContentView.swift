@@ -70,7 +70,7 @@ struct ContentView: View {
                                 Button {
                                     selectedPhoto = item
                                 } label: {
-                                    AsyncImage(url: URL(string: String(item.urls.regular))) {image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                    AsyncImage(url: URL(string: String(item.urls.regular))) { image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
                                     } placeholder: {
                                         ProgressView().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
                                     }

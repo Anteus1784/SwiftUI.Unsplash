@@ -17,6 +17,16 @@ struct UnsplashPhoto: Codable, Identifiable{
 
 struct User: Codable {
     let name: String
+    let profile_image: UnsplashProfileImage
+    let links : UnsplashProfileLinks
+}
+
+struct UnsplashProfileImage: Codable {
+    let small : String
+}
+
+struct UnsplashProfileLinks: Codable {
+    let html : String
 }
 
 struct UnsplashPhotoUrls: Codable {

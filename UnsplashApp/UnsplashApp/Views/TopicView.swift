@@ -14,6 +14,8 @@ struct TopicView: View {
     
     @StateObject var topicState = TopicState()
     
+    @State var selectedPhoto: UnsplashPhoto?
+    
     var body: some View {
         VStack {
             NavigationStack {
@@ -30,10 +32,16 @@ struct TopicView: View {
                         if let topicPhotoUnwrapped = topicState.topicPhoto
                         {
                             ForEach(topicPhotoUnwrapped){ item in
-                                AsyncImage(url: URL(string: String(item.urls.regular))) {image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
-                                } placeholder: {
-                                    ProgressView().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                Button {
+                                    selectedPhoto = item
+                                } label:{
+                                    AsyncImage(url: URL(string: String(item.urls.regular))) {image in image.resizable().centerCropped().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                    } placeholder: {
+                                        ProgressView().clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))).frame(height: 150)
+                                    }
                                 }
+                            }.sheet(item: $selectedPhoto) { item in
+                                ImageView(photo: item)
                             }
                         } else {
                             ForEach (1...12, id: \.self){ i in
